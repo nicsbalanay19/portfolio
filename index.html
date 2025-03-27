@@ -2,118 +2,107 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nico Alyn Balanay - Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Responsive Personal Portfolio Website Design | Codehal</title>
+
+    <!-- box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
-    <header>
-      <img src="nics.jpg" alt="Nico Alyn O. Balanay" class="profile-pic" />
-      <h1>Nico Alyn O. Balanay</h1>
-      <p>Mid Web Developer | 3 Years Experience</p>
-      <a href="nics-balanay-resume-cv.pdf" download class="download-btn">Download CV</a>
+    <!-- header design -->
+
+    <header class="header">
+      <a href="#" class="logo">Portfolio</a>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </header>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        Knowledgeable Web Developer with solid foundation in web development and
-        keen eye for detail in crafting user-friendly websites. Successfully
-        developed and maintained numerous web applications, enhancing user
-        engagement and operational efficiency. Demonstrated proficiency in
-        coding languages and frameworks, alongside collaboration with
-        crossfunctional teams to achieve project goals.
-      </p>
-    </section>
-    <section id="resume">
-        <h2>Download My Resume</h2>
-        <a href="nics-balanay-resume-cv.pdf" download class="download-btn">Download CV</a>
-    </section>
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <ul>
-            <li><strong>Programming Languages:</strong> Java, Python, Groovy, JavaScript, PHP</li>
-            <li><strong>Web Development:</strong> HTML, CSS, Node.js</li>
-            <li><strong>Frameworks & Libraries:</strong> Quasar, Vue.js, Groovy on Grails, Spring Boot</li>
-            <li><strong>Database Management:</strong> MySQL (Database Manipulation)</li>
-            <li><strong>Operating Systems:</strong> Ubuntu Linux (Project Compilation & Deployment)</li>
-            <li><strong>Version Control:</strong> Git</li>
-            <li><strong>Development Methodologies:</strong> Agile SCRUM</li>
-            <li><strong>Other Skills:</strong> Excellent troubleshooting techniques</li>
-        </ul>
-        
-    </section>
-    <section id="experience">
-      <h2>Work Experience</h2>
-      <p>
-        <strong>Mid Web Developer</strong> - Decypher Technologies (July 2024 -
-        March 2025)
-      </p>
-      <p>
-        <strong>Web Developer</strong> - Apollotech Global Corp (June 2022 -
-        July 2024)
-      </p>
-    </section>
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>eTrade and PEZA</h3>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Nico Alyn Balanay</h1>
+        <h3>And i'm a <span>Mid Web Developer</span></h3>
         <p>
-          eTrade and PEZA is a web-based platform designed to streamline and
-          automate trade-related transactions between businesses and the
-          Philippine Economic Zone Authority (PEZA). The system facilitates
-          secure document processing, compliance tracking, and real-time status
-          updates, reducing manual paperwork and improving efficiency. Built
-          using Groovy in the Grails framework, the platform ensures
-          scalability, seamless integration with existing enterprise systems,
-          and an enhanced user experience.
+          Passionate about building dynamic and user-friendly web applications,
+          I specialize in crafting seamless digital experiences. With a strong
+          foundation in front-end and back-end technologies, I bring innovative
+          solutions to life—transforming ideas into functional, high-performing
+          websites. Let's create something amazing together!
         </p>
-        <p>As part of the development team, I
-            was responsible for adding new features, optimizing system
-            performance, and maintaining the platform to ensure seamless
-            operations. My contributions included implementing new compliance
-            modules, improving user authentication security, and resolving system
-            bugs to enhance overall efficiency and reliability.</p>
+
+        <div class="social-media">
+          <a href="#"><i class="bx bxl-facebook"></i> </a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+          <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+          <a href="#"><i class="bx bxl-linkedin"></i></a>
+        </div>
+        <a href="#" class="btn">Download CV</a>
       </div>
-      <div class="project">
-        <h3>SpecOp Secure</h3>
-        <p>
-          SpecOp Secure is a cybersecurity-focused web platform developed to
-          deliver advanced security solutions for businesses, offering threat
-          detection, vulnerability management, and compliance tracking. The
-          system enhances real-time monitoring, robust access controls, and
-          automated security policies to safeguard IT infrastructures. 
-        </p>
-        <p>As part
-            of the development team, I contributed to building and optimizing the
-            platform’s frontend and backend using Quasar, Vue.js, and Node.js. My
-            work included refining authentication mechanisms, enhancing dashboard
-            analytics, and ensuring seamless integration with third-party security
-            services.</p>
-    </div>
+
+      <div class="home-img">
+        <img class="portfolio-img" src="nics.png" alt="home image" />
       </div>
     </section>
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: nicsbalanay19@gmail.com</p>
-      <p>Phone: +639261201437</p>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img class="about-portfolio-img" src="nics.png" alt="about-img" />
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Mid Web Developer</h3>
+        <p>
+          I am Nico Alyn Balanay, a Mid-Level Web Developer with a keen eye for
+          detail and a passion for crafting user-centric web applications. With
+          nearly three years of industry experience, I have successfully
+          developed and maintained various websites and applications that
+          improve user engagement and operational efficiency. My expertise
+          includes working with modern frameworks, databases, and cloud
+          environments to deliver scalable and high-performing solutions. I
+          thrive in collaborative environments, bringing together creativity and
+          technical skills to turn ideas into reality. Beyond coding, I enjoy
+          continuous learning and staying updated with the latest web
+          technologies to create impactful digital experiences. Want to work
+          together? Let's build something great!
+        </p>
+        <a href="#" class="btn">Read More</a>
+      </div>
     </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: nicsbalanay19@gmail.com</p>
-        <p>Phone: +639261201437</p>
-        <a href="nics-balanay-resume-cv.pdf" download class="download-btn">Download CV</a>
-    </section>
-    
-    <footer>
-      <p>&copy; 2025 Nico Alyn O. Balanay</p>
-    </footer>
+
+    <!-- services section design -->
+
+    <!-- portfolio section design -->
+
+    <!-- contact section design -->
+
+    <!-- footer design -->
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
   </body>
 </html>
